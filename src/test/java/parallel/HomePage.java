@@ -4,24 +4,17 @@ package parallel;
 import org.openqa.selenium.WebDriver;
 
 
-public class HomePage {	
-
-	WebDriver driver; 
-	HomePage homePage;
+public class HomePage extends BaseTest{	
 	LangHomePage langHomePage;
-
-	String URL = "https://www.wikipedia.org/";
-	String exptLangTitle;
-	String actlLangTitle;
 	
-	
-
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 	}
 
 	public LangHomePage launchHomePage() {
-		driver.get(URL);
+		if(!driver.getTitle().equals("Wikipedia")) {
+            driver.get(URL);
+        }  
 		if (isOpen() == false) {
 			throw new RuntimeException("Home Page is not launched Correctly");
 		}
@@ -30,6 +23,5 @@ public class HomePage {
 
 	private boolean isOpen() {
 		return driver.getCurrentUrl().contains(URL);
-	}
-	
-	}
+	}		
+}

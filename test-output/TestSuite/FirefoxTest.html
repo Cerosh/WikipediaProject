@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 15 19:55:23 AEST 2018</td>
+<td>Started on:</td><td>Wed May 16 22:51:07 AEST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>45 seconds (45112 ms)</td>
+<tr><td>Total time:</td><td>53 seconds (53970 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -78,10 +78,10 @@ function toggleAllBoxes() {
 <td title='parallel.WikiTestScript.testParameterWithXML()'><b>testParameterWithXML</b><br>Test class: parallel.WikiTestScript</td>
 <td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;li id=&quot;n-bug_in_article&quot;&gt; could not be scrolled into view
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;Ceroshs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:88d:706b:b85b:27eb%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_151&apos;
+System info: host: &apos;Ceroshs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1091:a6bb:1251:97f8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=/var/folders/sp/yvnh4fgs5d744shh21p9bq2c0000gn/T/rust_mozprofile.LtoZwecyKraW, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=15039.0, browserName=firefox, javascriptEnabled=true, platformName=darwin, moz:webdriverClick=true}]
-Session ID: 0aa1a89f-8f32-e344-a28e-8c0059672559
+Capabilities [{moz:profile=/var/folders/sp/yvnh4fgs5d744shh21p9bq2c0000gn/T/rust_mozprofile.tmJj609V591z, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=28701.0, browserName=firefox, javascriptEnabled=true, platformName=darwin, moz:webdriverClick=true}]
+Session ID: aee8ba1a-c671-5847-9a07-69e25a9a2279
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
@@ -90,19 +90,21 @@ Session ID: 0aa1a89f-8f32-e344-a28e-8c0059672559
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at parallel.HomePage.launchLangHomePage(HomePage.java:73)
-	at parallel.WikiTestScript.testParameterWithXML(WikiTestScript.java:43)
+	at parallel.LangLnkPg.clkLangLink(LangLnkPg.java:21)
+	at parallel.LangLnkPg.&lt;init&gt;(LangLnkPg.java:13)
+	at parallel.LangHomePage.launchLangHomePage(LangHomePage.java:25)
+	at parallel.WikiTestScript.testParameterWithXML(WikiTestScript.java:14)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace529328613", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace529328613'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;li id=&quot;n-bug_in_article&quot;&gt; could not be scrolled into view
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1835341690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1835341690'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;li id=&quot;n-bug_in_article&quot;&gt; could not be scrolled into view
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;Ceroshs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:88d:706b:b85b:27eb%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_151&apos;
+System info: host: &apos;Ceroshs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1091:a6bb:1251:97f8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_151&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=/var/folders/sp/yvnh4fgs5d744shh21p9bq2c0000gn/T/rust_mozprofile.LtoZwecyKraW, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=15039.0, browserName=firefox, javascriptEnabled=true, platformName=darwin, moz:webdriverClick=true}]
-Session ID: 0aa1a89f-8f32-e344-a28e-8c0059672559
+Capabilities [{moz:profile=/var/folders/sp/yvnh4fgs5d744shh21p9bq2c0000gn/T/rust_mozprofile.tmJj609V591z, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=28701.0, browserName=firefox, javascriptEnabled=true, platformName=darwin, moz:webdriverClick=true}]
+Session ID: aee8ba1a-c671-5847-9a07-69e25a9a2279
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -115,8 +117,10 @@ Session ID: 0aa1a89f-8f32-e344-a28e-8c0059672559
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at parallel.HomePage.launchLangHomePage(HomePage.java:73)
-	at parallel.WikiTestScript.testParameterWithXML(WikiTestScript.java:43)
+	at parallel.LangLnkPg.clkLangLink(LangLnkPg.java:21)
+	at parallel.LangLnkPg.&lt;init&gt;(LangLnkPg.java:13)
+	at parallel.LangHomePage.launchLangHomePage(LangHomePage.java:25)
+	at parallel.WikiTestScript.testParameterWithXML(WikiTestScript.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -138,8 +142,8 @@ Session ID: 0aa1a89f-8f32-e344-a28e-8c0059672559
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
-<td>41</td>
-<td>parallel.WikiTestScript@3c0ecd4b</td></tr>
+<td>50</td>
+<td>parallel.WikiTestScript@271053e1</td></tr>
 </table><p>
 </body>
 </html>

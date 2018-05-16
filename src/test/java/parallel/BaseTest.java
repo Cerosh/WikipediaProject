@@ -2,8 +2,9 @@ package parallel;
 
 import java.util.concurrent.TimeUnit;
 
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -14,7 +15,9 @@ import org.testng.annotations.Parameters;
 public class BaseTest {
 	
   WebDriver driver;
-   String URL = "https://www.wikipedia.org/";
+	protected String langTitleXpathPrt1 = "//a[@id='js-link-box-";
+	protected String dynamicXpath;
+	String URL = "https://www.wikipedia.org/";
 
   @BeforeClass
 	@Parameters("browser")
@@ -33,10 +36,21 @@ public class BaseTest {
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
-  public void launchHomePage() {
-		driver.get(URL);
-		
+  
+  public int getSize(String arg1) {
+		int size = driver.findElements(By.xpath(arg1)).size();
+		return size;			
+	}
 
+	public String getDynamicXpath(String xpathPrt1, int i) {
+		dynamicXpath = xpathPrt1 + "[" + i + "]";
+		return dynamicXpath;
+	}
+
+	public String getLangTitle(WebElement dynamicLngEle) {
+		String langCode = dynamicLngEle.getAttribute("lang");
+		String langTitleXpath = langTitleXpathPrt1 + langCode + "']";
+		return driver.findElement(By.xpath(langTitleXpath)).getAttribute("title");
 	}
 
   @AfterClass

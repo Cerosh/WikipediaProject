@@ -1,30 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="23973" started-at="2018-05-16T10:46:39Z" finished-at="2018-05-16T10:47:03Z">
+  <suite name="TestSuite" duration-ms="139061" started-at="2018-05-16T12:51:07Z" finished-at="2018-05-16T12:53:26Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="23973" started-at="2018-05-16T10:46:39Z" finished-at="2018-05-16T10:47:03Z">
+    <test name="FirefoxTest" duration-ms="53970" started-at="2018-05-16T12:51:07Z" finished-at="2018-05-16T12:52:01Z">
       <class name="parallel.WikiTestScript">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:parallel.WikiTestScript@685cb137]" name="setup" is-config="true" duration-ms="1141" started-at="2018-05-16T20:46:39Z" finished-at="2018-05-16T20:46:40Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:parallel.WikiTestScript@271053e1]" name="setup" is-config="true" duration-ms="2486" started-at="2018-05-16T22:51:07Z" finished-at="2018-05-16T22:51:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="testParameterWithXML()[pri:0, instance:parallel.WikiTestScript@685cb137]" name="testParameterWithXML" duration-ms="22727" started-at="2018-05-16T20:46:40Z" finished-at="2018-05-16T20:47:03Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="testParameterWithXML()[pri:0, instance:parallel.WikiTestScript@271053e1]" name="testParameterWithXML" duration-ms="50884" started-at="2018-05-16T22:51:10Z" finished-at="2018-05-16T22:52:00Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <li id="n-bug_in_article"> could not be scrolled into view
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'Ceroshs-MacBook-Pro.local', ip: 'fe80:0:0:0:1091:a6bb:1251:97f8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/sp/yvnh4fgs5d744shh21p9bq2c0000gn/T/rust_mozprofile.tmJj609V591z, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=28701.0, browserName=firefox, javascriptEnabled=true, platformName=darwin, moz:webdriverClick=true}]
+Session ID: aee8ba1a-c671-5847-9a07-69e25a9a2279]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at parallel.LangHomePage.clkLangLink(LangHomePage.java:61)
-	at parallel.LangHomePage.launchLangHomePage(LangHomePage.java:33)
-	at parallel.WikiTestScript.testParameterWithXML(WikiTestScript.java:13)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <li id="n-bug_in_article"> could not be scrolled into view
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'Ceroshs-MacBook-Pro.local', ip: 'fe80:0:0:0:1091:a6bb:1251:97f8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/sp/yvnh4fgs5d744shh21p9bq2c0000gn/T/rust_mozprofile.tmJj609V591z, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=28701.0, browserName=firefox, javascriptEnabled=true, platformName=darwin, moz:webdriverClick=true}]
+Session ID: aee8ba1a-c671-5847-9a07-69e25a9a2279
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at parallel.LangLnkPg.clkLangLink(LangLnkPg.java:21)
+	at parallel.LangLnkPg.<init>(LangLnkPg.java:13)
+	at parallel.LangHomePage.launchLangHomePage(LangHomePage.java:25)
+	at parallel.WikiTestScript.testParameterWithXML(WikiTestScript.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,11 +73,34 @@
 	at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testParameterWithXML -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:parallel.WikiTestScript@685cb137]" name="tearDown" is-config="true" duration-ms="91" started-at="2018-05-16T20:47:03Z" finished-at="2018-05-16T20:47:03Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:parallel.WikiTestScript@271053e1]" name="tearDown" is-config="true" duration-ms="587" started-at="2018-05-16T22:52:00Z" finished-at="2018-05-16T22:52:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- parallel.WikiTestScript -->
+    </test> <!-- FirefoxTest -->
+    <test name="ChromeTest" duration-ms="139061" started-at="2018-05-16T12:51:07Z" finished-at="2018-05-16T12:53:26Z">
+      <class name="parallel.WikiTestScript">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:parallel.WikiTestScript@6093dd95]" name="setup" is-config="true" duration-ms="1176" started-at="2018-05-16T22:51:07Z" finished-at="2018-05-16T22:51:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testParameterWithXML()[pri:0, instance:parallel.WikiTestScript@6093dd95]" name="testParameterWithXML" duration-ms="137755" started-at="2018-05-16T22:51:08Z" finished-at="2018-05-16T22:53:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParameterWithXML -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:parallel.WikiTestScript@6093dd95]" name="tearDown" is-config="true" duration-ms="113" started-at="2018-05-16T22:53:26Z" finished-at="2018-05-16T22:53:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
