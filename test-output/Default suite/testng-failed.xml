@@ -6,8 +6,8 @@
       <class name="parallel.WikiTestScript">
         <methods>
           <include name="setup"/>
-          <include name="tearDown"/>
           <include name="testParameterWithXML"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- parallel.WikiTestScript -->
     </classes>

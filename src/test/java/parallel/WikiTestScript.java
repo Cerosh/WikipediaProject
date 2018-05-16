@@ -8,9 +8,9 @@ public class WikiTestScript extends BaseTest{
 
 	@Test
 	public void testParameterWithXML()  {
-		HomePage homePage = new HomePage(driver);
-		homePage.launchHomePage();
-		homePage.launchLangHomePage();
+		homePage = new HomePage(driver);
+		langHomePage= homePage.launchHomePage();
+		langHomePage.launchLangHomePage();
 	}
 	
 }

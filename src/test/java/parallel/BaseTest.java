@@ -14,6 +14,7 @@ import org.testng.annotations.Parameters;
 public class BaseTest {
 	
   WebDriver driver;
+   String URL = "https://www.wikipedia.org/";
 
   @BeforeClass
 	@Parameters("browser")
@@ -31,6 +32,11 @@ public class BaseTest {
 			throw new Exception("Browser is not correct");
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+  public void launchHomePage() {
+		driver.get(URL);
+		
+
 	}
 
   @AfterClass
