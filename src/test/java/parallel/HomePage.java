@@ -1,27 +1,21 @@
 package parallel;
 
+public class HomePage {
+	private WikiDriver wikiDrvr;
+	private final String URL = "https://www.wikipedia.org/";
+	private final String TITLE = "wikipedia";
 
-import org.openqa.selenium.WebDriver;
-
-
-public class HomePage extends BaseTest{	
-	LangHomePage langHomePage;
-	
-	public HomePage(WebDriver driver) {
-		this.driver = driver;
+	public HomePage(WikiDriver wikiDrvr) {
+		this.wikiDrvr = wikiDrvr;
 	}
 
 	public LangHomePage launchHomePage() {
-		if(!driver.getTitle().equals("Wikipedia")) {
-            driver.get(URL);
-        }  
-		if (isOpen() == false) {
-			throw new RuntimeException("Home Page is not launched Correctly");
+		wikiDrvr.get(URL);
+		String pageTitle = wikiDrvr.getTitle().toLowerCase();
+		if (pageTitle.contains(TITLE.toLowerCase()) == false) {
+			throw new RuntimeException("Home Page is not displayed!");
 		}
-		return new LangHomePage(driver);
+		return new LangHomePage(wikiDrvr);
 	}
 
-	private boolean isOpen() {
-		return driver.getCurrentUrl().contains(URL);
-	}		
 }

@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestSuite" thread-count="2"  parallel="tests" >
+<suite name="Wikipedia Test Report " thread-count="2"  parallel="tests" >
 
-    <test name="ChromeTest">
+    <test name="Test Execution in Chrome-1">
   <parameter name="browser" value="chrome" />
     <classes>
        <class name="parallel.WikiTestScript">
        </class>
     </classes>
   </test>
-   
+   <test name="Test Execution in Chrome-2">
+  <parameter name="browser" value="chrome" />
+    <classes>
+       <class name="parallel.WikiTestScript">
+       </class>
+    </classes>
+  </test>
+    <!-- 
   <test name="FirefoxTest">
   <parameter name="browser" value="Firefox" />
     <classes>
@@ -17,7 +24,7 @@
        </class>
     </classes>
   </test>
-  <!-- 
+ 
  <test name="SafariTest">
   <parameter name="browser" value="safari" />
     <classes>
